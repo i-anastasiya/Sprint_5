@@ -65,5 +65,5 @@ class Locators:
     # Заголовок Начинки  на главной
     TITLE_3 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')
 
-
-
+    # Кнопка Зарегистрироваться на экране авторизации
+    REGISTRATION_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[1]/a')
