@@ -12,7 +12,7 @@ class TestStellarBurgersGoAccount:
         open_stellar_burgers.find_element(*Locators.PERSONAL_AREA_BUTTON).click()
         open_stellar_burgers.find_element(*Locators.EMAIL).send_keys(Constants.EMAIL)
         open_stellar_burgers.find_element(*Locators.PASSWORD).send_keys(Constants.PASSWORD)
-        open_stellar_burgers.find_element(*Locators.AUTH_BUTTON).click()
+        open_stellar_burgers.find_element(*Locators.AUTH_BUTTON_ACCOUNT).click()
         name_button = WebDriverWait(open_stellar_burgers, 5).until(EC.visibility_of_element_located
                                                                    ((Locators.COME_IN_BUTTON))).text
         assert name_button == 'Оформить заказ'

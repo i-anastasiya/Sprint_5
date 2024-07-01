@@ -18,52 +18,58 @@ class Locators:
     NAME_REGISTRATION = (By.XPATH, './/form/fieldset[1]/div/div/input')
 
     # кнопка Личный Кабинет на главной
-    PERSONAL_AREA_BUTTON = (By.XPATH, '//*[@id="root"]/div/header/nav/a/p')
+    PERSONAL_AREA_BUTTON = (By.XPATH, ".//p[text()='Личный Кабинет']")
 
-    # кнопка Войти/Зарегистрироваться/Восстановить/Сохранить в аккаунт на экране авторизации
-    AUTH_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/div/form/button')
+    # кнопка Зарегистрироваться на экране авторизации
+    AUTH_BUTTON_REGISTRATION = (By.XPATH, ".//button[text()='Зарегистрироваться']")
 
-    # кнопка Войти/Оформить заказ на главной
-    COME_IN_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/section[2]/div/button')
+    # кнопка Войти в аккаунт на экране авторизации
+    AUTH_BUTTON_ACCOUNT = (By.XPATH, ".//button[text()='Войти']")
+
+    # кнопка Войти в аккаунт на главной
+    AUTH_BUTTON_ACCOUNT_1 = (By.XPATH, ".//button[text()='Войти в аккаунт']")
+
+    # кнопка Оформить заказ на главной
+    COME_IN_BUTTON = (By.XPATH, ".//button[text()='Оформить заказ']")
 
     # Ошибка Некорректный пароль на экране авторизации
-    INCORRECT_PASSWORD = (By.XPATH, '//*[@id="root"]/div/main/div/form/fieldset[3]/div/p')
+    INCORRECT_PASSWORD = (By.XPATH, ".//p[text()='Некорректный пароль']")
 
     # Кнопка восстановить пароль на экране авторизации
-    BUTTON_RECOVERY = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[2]/a')
+    BUTTON_RECOVERY = (By.XPATH, ".//a[text()='Восстановить пароль']")
 
     # Кнопка Войти на экране Восстановления пароля и на экране регистрации
-    BUTTON_LOGIN = (By.XPATH, '//*[@id="root"]/div/main/div/div/p/a')
+    BUTTON_LOGIN = (By.XPATH, ".//a[text()='Войти']")
 
     # Кнопка Выход в личном кабинете
-    BUTTON_EXIT = (By.XPATH, '//*[@id="root"]/div/main/div/nav/ul/li[3]/button')
+    BUTTON_EXIT = (By.XPATH, ".//button[text()='Выход']")
 
     # Кнопка Конструктор
-    BUTTON_CONSTRUCTOR = (By.XPATH, '//*[@id="root"]/div/header/nav/ul/li[1]/a')
+    BUTTON_CONSTRUCTOR = (By.XPATH, ".//p[text()='Конструктор']")
 
     # Текст Соберите бургер на главной
-    TEXT_HOME = (By.XPATH, '//*[@id="root"]/div/main/section[1]/h1')
+    TEXT_HOME = (By.XPATH, ".//h1[text()='Соберите бургер']")
 
     # Логотип сайта
-    LOGO = (By.XPATH, '//*[@id="root"]/div/header/nav/div')
+    LOGO = (By.CSS_SELECTOR, 'div.AppHeader_header__logo__2D0X2')
 
     # Тег Булки на главной
-    TAG_1 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[1]')
+    TAG_1 = (By.XPATH, ".//span[text()='Булки']")
 
     # Тег Соусы на главной
-    TAG_2 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[2]')
+    TAG_2 = (By.XPATH, ".//span[text()='Соусы']")
 
     # Тег Начинки на главной
-    TAG_3 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[1]/div[3]')
+    TAG_3 = (By.XPATH, ".//span[text()='Начинки']")
 
     # Заголовок Булки на главной
-    TITLE_1 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[1]')
+    TITLE_1 = (By.XPATH, ".//h2[text()='Булки']")
 
     # Заголовок Соусы на главной
-    TITLE_2 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[2]')
+    TITLE_2 = (By.XPATH, ".//h2[text()='Соусы']")
 
     # Заголовок Начинки  на главной
-    TITLE_3 = (By.XPATH, '//*[@id="root"]/div/main/section[1]/div[2]/h2[3]')
+    TITLE_3 = (By.XPATH, ".//h2[text()='Начинки']")
 
     # Кнопка Зарегистрироваться на экране авторизации
-    REGISTRATION_BUTTON = (By.XPATH, '//*[@id="root"]/div/main/div/div/p[1]/a')
+    REGISTRATION_BUTTON = (By.XPATH, ".//a[text()='Зарегистрироваться']")
